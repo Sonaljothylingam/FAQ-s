@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Finlandica:ital@1&display=swap');
+body{
+  font-family: 'Baloo Bhai 2', cursive;
+  background-color: black;
+}
+.container-fluid{
+ width: 40%;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+p{
+  color: white; /*This is the color of the answers and can change when wanted*/
+}
+h5{
+  color: white; /*This is the color of the questions and can change when wanted*/
+}
+.container-fluid h1{
+  color: #9D00FF; /*This is the color of the heading FAQs and can change when wanted*/
+}
