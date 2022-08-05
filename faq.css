@@ -11,9 +11,57 @@ body{
 p{
   color: white; /*This is the color of the answers and can change when wanted*/
 }
-h5{
-  color: white; /*This is the color of the questions and can change when wanted*/
-}
 .container-fluid h1{
   color: #9D00FF; /*This is the color of the heading FAQs and can change when wanted*/
+  position: relative;
+  width: 23rem;
+}
+/* This is the dash which comes under h2 (add if needed)*/
+/*.container-fluid h1::after{
+  content: " ";
+  position: absolute;
+  bottom: 0;
+  right: 300px;
+  width:67px;
+  height: 2px;
+  background-color: #9D00FF;
+}*/
+.accordion{
+  width:100%;
+  border:2px solid white; /*bordercolor is white of the questions*/
+  cursor: pointer;
+  padding:3px;
+  background-color: rgba(193, 210, 236, 0.13);
+  border-radius: 50px;
+  display: flex;
+  margin: 10px 0;
+  align-items: center;
+  text-align: left;
+}
+.accordion .icon{
+  margin: 0 10px 0 0;
+  width: 40px; 
+  border-radius: 50%;
+  float: left;
+}
+.accordion .icon:after {
+  content: '\002B';
+  font-weight: 1000;
+  font-size: 30px;
+  margin-left: 20px;
+  transition: all .5s ease;
+  color: white;
+}
+
+.active .icon:after {
+  content: '\2212';
+  font-size: 30px;
+  font-weight: bolder;
+}
+.accordion h5{
+  font-size: 22px; /*font size of questions*/
+  margin: 0;
+  padding: 3px 0 0 0;
+  font-weight: normal;
+  color: white; /*Color of questions*/
 }
