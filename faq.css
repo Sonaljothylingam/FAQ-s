@@ -39,25 +39,36 @@ p{
   text-align: left;
 }
 .accordion .icon{
-  margin: 0 10px 0 0;
-  width: 40px; 
+  margin: 0 15px 0 0;
+  width: 50px; 
   border-radius: 50%;
   float: left;
+  background:  8px 5px white;
+}
+.active .icon{
+  background:8px 5px black ;
 }
 .accordion .icon:after {
   content: '\002B';
   font-weight: 1000;
   font-size: 30px;
-  margin-left: 20px;
+  margin-left: 15px;/*placement of icon inside the white circle*/
   transition: all .5s ease;
-  color: white;
+  color: black;
 }
-
+.active{
+  background-color: black;
+}
+.active h5{
+  color: black;
+}
 .active .icon:after {
   content: '\2212';
   font-size: 30px;
   font-weight: bolder;
+  color: white;
 }
+
 .accordion h5{
   font-size: 22px; /*font size of questions*/
   margin: 0;
