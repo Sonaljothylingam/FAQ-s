@@ -65,3 +65,14 @@ p{
   font-weight: normal;
   color: white; /*Color of questions*/
 }
+.panel{
+  padding: 0 15px;
+  border-left: 1px solid white;
+  margin-left: 25px;
+  font-size: 14px;
+  text-align: justify;
+  overflow: hidden;
+  max-height: 0; /*height of answers*/
+  transition: all .5s ease-in;
+
+}
